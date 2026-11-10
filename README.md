@@ -16,7 +16,7 @@ After that I looked at how much of the AI exposure comes from outside the AI sto
 - For Constellation and Eaton the AI beta roughly doubled after 2023 compared to the longer period.
 - In the DeepSeek week power & grid stocks fell 8.4%, almost three times more than the AI stocks themselves.
 - The correlation between the AI stocks and the rest of the portfolio went from 0.31 in normal weeks to 0.55 in the worst weeks, so diversification works worse exactly when you need it.
-- The Nordic stocks had surprisingly little AI exposure, Atlas Copco being the main exception.
+- Over the whole period the Nordic stocks had fairly little AI exposure, Atlas Copco being the main exception. But ABB's AI beta has grown a lot, from about -0.2 in early 2024 to about 0.5 over the last year (rolling 52 weeks, see `explore.ipynb`). So the exposure can grow without you changing the portfolio.
 
 ![weight vs AI exposure](output_2023/2_weight_vs_ai.png)
 
@@ -29,4 +29,4 @@ python run.py
 
 ## Limitations
 
-The betas are based on history and the AI theme has moved fast, so they might look different in a year. The results also depend on which stocks I put in the AI basket. And there are only around 20-30 really bad weeks in the data, so the stress correlations are pretty uncertain.
+The betas are based on history and the AI theme has moved fast, so they might look different in a year. The results also depend on which stocks I put in the AI basket. And there are only around 20-30 really bad weeks in the data, so the stress correlations are pretty uncertain. The rolling betas are noisy as well, one extreme week like DeepSeek can move them a lot when it enters or leaves the window.

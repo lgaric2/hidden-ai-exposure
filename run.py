@@ -77,5 +77,3 @@ plots.plot_risk(split, vol)
 plots.plot_rolling_corr(rolling, stress)
 plots.plot_scenario(scen_port, scen_groups, f"Scenario: AI basket {cfg.SCEN_AI:.0%}, market {cfg.SCEN_MARKET:.0%}")
 print("\ncharts saved in output/")
-
-# TODO: rolling betas over time (e.g. ABB) to see if AI exposure has grown since 2023
